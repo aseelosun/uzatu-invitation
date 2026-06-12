@@ -9,8 +9,8 @@ body {
     /* Wedding-themed serif fonts with excellent Cyrillic support for Kazakh */
     /* font-family: 'Cormorant Garamond', 'Playfair Display', serif; */
     font-family: 'Alice', serif;
-    background-color: #e8d4d4;
-    color: #003153; /* Prussian Blue */
+    background-color: #ffffff;
+    color: #5e1d1d; /* Prussian Blue */
     display: flex;
     justify-content: center;
     align-items: center;
