@@ -138,13 +138,13 @@
         if (music.paused) {
             try {
                 await music.play();
-                btn.innerHTML = "🔇 Музыканы тоқтату";
+                btn.innerHTML = "🔇 Әуенді тоқтату";
             } catch (e) {
                 console.log(e);
             }
         } else {
             music.pause();
-            btn.innerHTML = "🎵 Музыка";
+            btn.innerHTML = "🎵 Әуенді қосу";
         }
     });
     </script>
