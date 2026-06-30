@@ -21,6 +21,12 @@
 </head>
 
 <body>
+    <button id="musicBtn">🎵 Музыка</button>
+
+    <audio id="bgMusic" loop>
+        <source src="./assets/music/wedding.mp3" type="audio/mpeg">
+    </audio>
+
     <div class="invitation-card">
         <div id="main-image-container">
             <img src="./assets/images/bau.png">
@@ -123,6 +129,25 @@
             <p>Құрметпен, <span style="text-wrap:nowrap;">Ерлан-Гүлнәр!</span></p>
         </footer>
     </div>
+
+    <script>
+    const music = document.getElementById("bgMusic");
+    const btn = document.getElementById("musicBtn");
+
+    btn.addEventListener("click", async () => {
+        if (music.paused) {
+            try {
+                await music.play();
+                btn.innerHTML = "🔇 Музыканы тоқтату";
+            } catch (e) {
+                console.log(e);
+            }
+        } else {
+            music.pause();
+            btn.innerHTML = "🎵 Музыка";
+        }
+    });
+    </script>
 </body>
 
 </html>
